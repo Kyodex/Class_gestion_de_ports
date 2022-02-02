@@ -5,10 +5,15 @@ public class Quais {
     private int quaisOcc;
     //constructeur vide
     public Quais(){
-
+        this.nbQuais = 3;
     }
+    
     public Quais(int nbQuai){
-        this.nbQuais = nbQuai;
+        if(nbQuai>0){
+            this.nbQuais = nbQuai;
+        }else{
+            this.nbQuais = 3;
+        }
     }
 
    public boolean ajouterBateau(){
@@ -30,7 +35,11 @@ public class Quais {
     }
 
     public void retraitBateau(){
-        this.quaisOcc--;
+        if(this.quaisOcc>0){
+            this.quaisOcc--;
+        }else{
+            System.out.println("Pas de bateau à quai");
+        }
     }
 
     public int getNbQuais() {
