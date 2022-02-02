@@ -12,11 +12,13 @@ public class Port {
     public Port(float x,float y){
         this.x=x;
         this.y=y;
+        this.quais = new Quais();
     }
 
     public Port(float x,float y , int nbQuai){
         this.x=x;
         this.y=y;
+        this.quais = new Quais();
         this.quais.setNbQuais(nbQuai);
     }
 
