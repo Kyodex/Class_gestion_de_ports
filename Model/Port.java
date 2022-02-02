@@ -18,8 +18,7 @@ public class Port {
     public Port(float x,float y , int nbQuai){
         this.x=x;
         this.y=y;
-        this.quais = new Quais();
-        this.quais.setNbQuais(nbQuai);
+        this.quais = new Quais(nbQuai);
     }
 
     public boolean ajouterBateau(){
