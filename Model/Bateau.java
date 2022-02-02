@@ -15,6 +15,7 @@ public class Bateau {
     }
 
     public Bateau() {
+        this.enMer = true;
     }
 
     public void accoster(Port a){
